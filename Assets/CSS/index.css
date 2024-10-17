@@ -1,9 +1,12 @@
+/* Hero Section */
+
 .hero {
     display: flex;
     flex-direction: column; 
     padding-left: 4rem;
     padding-top: 4rem;
     gap: 1rem; 
+    height: 100vh;
   }
   
   .contentWrapper {
@@ -15,10 +18,28 @@
   }
   
   .heroImgDiv {
-    background-color: hotpink;
+    position: relative;
     width: 400px;
     height: 400px;
+    background-color: hotpink; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
+  .greetingText {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 35px;
+    font-weight: bold;
+    font-family: "IBM Plex Mono", monospace;
+    color: white;
+    text-align: center;
+  }
+  
+  
   
   .hero h1 {
     flex: 1; 
@@ -33,4 +54,162 @@
     align-self: flex-start; 
     font-size: 25px;
   }
+
+/* FEP Section */
+.FEPSection {
+  padding: 3rem;
+}
+
+.FepWrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+}
+
+.boxDiv {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black; 
+  padding: 1rem;
+  border-radius: 30px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, outline 0.3s ease; 
+  cursor: pointer; 
+  background-color: white; 
+  border: 2px solid transparent; 
+}
+
+/* link styling */
+.boxLink {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-decoration: none; 
+  height: 100%; 
+  color: inherit; 
+}
+
+.boxDiv h3,
+.boxDiv p {
+  font-weight: bold;
+  color: black;
+}
+
+/* Label */
+.label {
+  position: absolute;
+  top: 0%; 
+  left: 20%; 
+  background-color: white; 
+  color: black; 
+  padding: 5px 10px; 
+  font-size: 12px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  transform: rotate(90deg); 
+  transform-origin: top left; 
+  margin-top: 0px; 
+  border-radius: 3px; 
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* Box background colors */
+.box1 {
+  background-color: #DA78E6;
+  grid-column: span 2;
+}
+
+.box2 {
+  background-color: #1AE6AF;
+  grid-column: span 2;
+}
+
+.box3 {
+  background-color: #0FECFF;
+}
+
+.box4 {
+  background-color: #AE0B0B;
+  grid-column: span 2;
+}
+
+.box5 {
+  background-color: #76FF00;
+  grid-column: span 2;
+}
+
+.box6 {
+  background-color: #FFD800;
+}
+
+.box7 {
+  background-color: #B655FF;
+  grid-column: span 2;
+}
+
+.box8 {
+  background-color: #008B1B;
+  grid-column: span 2;
+}
+
+/* Hover effect */
+.boxDiv:hover {
+  transform: scale(1.05); 
+  outline: 4px solid transparent; 
+  background-color: black; 
+}
+
+/* Hover colors for divs */
+.box1:hover {
+  color: #DA78E6; 
+  outline-color: #DA78E6; 
+}
+
+.box2:hover {
+  color: #1AE6AF; 
+  outline-color: #1AE6AF; 
+}
+
+.box3:hover {
+  color: #0FECFF; 
+  outline-color: #0FECFF; 
+}
+
+.box4:hover {
+  color: #AE0B0B; 
+  outline-color: #AE0B0B; 
+}
+
+.box5:hover {
+  color: #76FF00; 
+  outline-color: #76FF00; 
+}
+
+.box6:hover {
+  color: #FFD800; 
+  outline-color: #FFD800; 
+}
+
+.box7:hover {
+  color: #B655FF; 
+  outline-color: #B655FF; 
+}
+
+.box8:hover {
+  color: #008B1B; 
+  outline-color: #008B1B; 
+}
+
+.boxDiv:hover h3,
+.boxDiv:hover p {
+  color: inherit; 
+}
+
+  
+  
+
   

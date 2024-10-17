@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 *,
 *::before,
 *::after{
@@ -8,6 +10,11 @@
     --stdPadding: 0px;
     --stdMargin: 0px;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
 
 body{
     margin: 0;
@@ -21,5 +28,80 @@ h1,
 h2,
 h3,
 h4{
+    font-family: "IBM Plex Mono", monospace;
     color: white;
+}
+
+
+.navbar {
+    display: flex;
+    padding: 1rem 2rem;
+    background-color: red;
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    margin-left: auto; 
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+}
+
+.nav-list li a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 5rem;
+}
+
+.bar {
+    height: 4px;
+    width: 100%;
+    background-color: white; 
+    margin: 2px 0;
+    transition: 0.3s;
+}
+
+#nav-list {
+    display: none; 
+    position: absolute; 
+    top: 3rem; 
+    right: 0; 
+    background-color: grey; 
+    width: 50%; 
+    height: 100vh;
+    padding: 1rem 0; 
+    text-align: center;
+}
+
+
+  /* Active class til burgermenu */
+#nav-list.active {
+    display: block; 
+}
+
+  /* Burgerbar animation = x */
+
+  .menu-icon.open .bar1 {
+    transform: rotate(45deg) translate(5px, 5px); 
+}
+
+.menu-icon.open .bar2 {
+    opacity: 0; 
+}
+
+.menu-icon.open .bar3 {
+    transform: rotate(-45deg) translate(5px, -5px); 
 }
