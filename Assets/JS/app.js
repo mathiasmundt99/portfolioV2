@@ -3,7 +3,7 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ";
 const value = ["Udvikler", "&", "Designer"]; 
 let interval = null;
 
-const element = document.querySelector('h1'); 
+const element = document.querySelector('heroH1'); 
 
 function startAnimation() {
     let iteration = 0;

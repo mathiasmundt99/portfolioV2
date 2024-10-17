@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }
+  
+  .name {
+    font-size: 3rem; 
+    color: white; 
+    margin-bottom: 2rem; /
+  }
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+  }
+  
+  .name {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .unlock-btn {
+    background: none;
+    border: 2px solid white;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    width: 80px; 
+    height: 80px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .unlock-btn img {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease; 
+  }
+  
+ 
+  .open-lock {
+    opacity: 0;
+  }
+  
+  .unlock-btn:hover .closed-lock {
+    opacity: 0;
+  }
+  
+  .unlock-btn:hover .open-lock {
+    opacity: 1;
+  }
+  
+  /* Button hover effect */
+  .unlock-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  

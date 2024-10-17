@@ -4,10 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Om mig</title>
+    <link rel="stylesheet" href="../Assets/CSS/globalStyle.css" />
+    <link rel="stylesheet" href="../Assets/CSS/about.css" />
+    <script src="../Assets/JS/app.js" defer></script>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1 class="name">Mathias Mundt</h1>
+        <button class="unlock-btn">
+          <img
+            src="../Assets/Img/lock-closed.svg"
+            alt="Lock Icon"
+            class="closed-lock"
+          />
+
+          <img
+            src="../Assets/Img/lock-open.svg"
+            alt="Lock Icon"
+            class="open-lock"
+          />
+        </button>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
