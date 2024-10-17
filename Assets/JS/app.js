@@ -1,5 +1,4 @@
 //https://www.youtube.com/watch?v=7QGoqt7ZIn4
-
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ";
 const value = ["Udvikler", "&", "Designer"]; 
 let interval = null;
@@ -34,10 +33,37 @@ function startAnimation() {
             clearInterval(interval);
         }
 
-        iteration += 1 / 5; 
+        iteration += 1 / 3; 
 
     }, 30); 
 }
 
 window.addEventListener('load', startAnimation);
+
+
+//Velkomst animation
+document.addEventListener("DOMContentLoaded", () => {
+    const greetings = ["Hello!", "Bonjour!", "Hola!", "Ciao!", "こんにちは!", "안녕하세요!", "Hej!"];
+    let currentIndex = 0;
+  
+    const greetingText = document.querySelector('.greetingText');
+  
+    setInterval(() => {
+      greetingText.innerText = greetings[currentIndex];
+      currentIndex = (currentIndex + 1) % greetings.length; 
+    }, 3000); 
+  });
+  
+
+
+//Navbar
+const menuIcon = document.getElementById('menu-icon');
+const navList = document.getElementById('nav-list');
+
+menuIcon.addEventListener('click', () => {
+    navList.classList.toggle('active'); 
+    menuIcon.classList.toggle('open'); 
+});
+
+  
 
