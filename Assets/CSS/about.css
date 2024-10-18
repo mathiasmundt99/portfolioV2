@@ -1,18 +1,11 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-  }
-  
-  .name {
-    font-size: 3rem; 
-    color: white; 
-    margin-bottom: 2rem; /
-  }
-  
-.container {
+/* Hero section */
+.name {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.heroContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,14 +13,13 @@
     height: 100vh;
     background-color: black;
     color: white;
-  }
-  
-  .name {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-  }
-  
-  .unlock-btn {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.6s ease, visibility 0s linear 0.6s;
+}
+
+/* Unlock button */
+.unlock-btn {
     background: none;
     border: 2px solid white;
     padding: 1rem;
@@ -37,39 +29,95 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; 
-    width: 80px; 
-    height: 80px; 
+    position: relative;
+    width: 80px;
+    height: 80px;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .unlock-btn img {
-    position: absolute; 
+}
+
+/* Unlock button images */
+.unlock-btn img {
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
-    transition: opacity 0.3s ease; 
-  }
-  
- 
-  .open-lock {
+    transition: opacity 0.3s ease;
+}
+
+.open-lock {
     opacity: 0;
-  }
-  
-  .unlock-btn:hover .closed-lock {
+}
+
+/* Hover effect for unlock button */
+.unlock-btn:hover .closed-lock {
     opacity: 0;
-  }
-  
-  .unlock-btn:hover .open-lock {
+}
+
+.unlock-btn:hover .open-lock {
     opacity: 1;
-  }
-  
-  /* Button hover effect */
-  .unlock-btn:hover {
+}
+
+.unlock-btn:hover {
     background-color: white;
     color: black;
-  }
-  
-  
+}
+
+/* Hidden intro content */
+.introContent {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    width: 100%;
+    z-index: -1;
+    padding: 2rem;
+    visibility: hidden;
+    position: relative;
+    top: 0;
+    margin-top: -100vh; 
+}
+
+/* Vis content efter button click */
+.introContent.show-content {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    position: relative;
+    z-index: 1;
+    margin-top: 0; 
+}
+
+/* Hero section fade-out */
+.heroContainer.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+    height: 0; 
+}
+
+/* Animation for heroContainer */
+.heroContainer.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+    height: 0; 
+}
+
+/* Om mig */
+
+.migWrapper{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.h3P{
+    width: 50%;
+}
+
+.imgWrapper img {
+    width: 100%;
+    height: 50%;
+    align-self: flex-start;
+}

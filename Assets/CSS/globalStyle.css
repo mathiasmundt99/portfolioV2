@@ -90,7 +90,7 @@ header{
     position: absolute; 
     top: 0; 
     right: 0; 
-    background-color: #FFFFF0; 
+    background-color: #fbfefc; 
     width: 50%; 
     height: 100vh;
     padding: 1rem 0; 
@@ -99,7 +99,7 @@ header{
 
   /* Nav text hover */
   .nav-list li a:hover {
-    color: hotpink; 
+    color: #0088cc; 
     cursor: pointer;
 }
 
