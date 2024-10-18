@@ -3,11 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Om mig</title>
+    <title>About Me</title>
+    <link rel="stylesheet" href="../Assets/CSS/globalStyle.css" />
+    <link rel="stylesheet" href="../Assets/CSS/about.css" />
+    <script src="../Assets/JS/app.js" defer></script>
+    <script src="../Assets/JS/curtainAnimation.js" defer></script>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-icon" id="menu-icon">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="heroContainer">
+        <h1 class="name">Mathias Mundt</h1>
+        <button class="unlock-btn">
+          <img
+            src="../Assets/Img/lock-closed.svg"
+            alt="Lock Icon"
+            class="closed-lock"
+          />
+          <img
+            src="../Assets/Img/lock-open.svg"
+            alt="Lock Icon"
+            class="open-lock"
+          />
+        </button>
+      </div>
+
+      <div class="introContent">
+        <div class="migWrapper">
+          <div class="h3P">
+            <h3>Hvem er jeg?</h3>
+            <p>
+              Jeg er en ung fyr, der elsker fart og spænding – både i livet og i
+              mine interesser. Struktur er ikke lige mig, men jeg trives i kaos,
+              og det ser jeg som en styrke. Det gør mig nemlig altid klar til at
+              tilpasse mig, når noget ændrer sig. Jeg elsker at dykke ned i
+              detaljer og nørde igennem, og ser mig selv som et kreativt væsen,
+              der ikke er bange for at tænke ud af boksen.
+              <br /><br />
+              Når jeg ikke sidder begravet i projekter, finder du mig ofte på
+              løbestierne eller i selskab med min familie og venner, som betyder
+              meget for mig. Jeg gamer, løber (bare se min strava.. den er ikke
+              betalt), og er passioneret omkring fodbold og Formel 1 – altid
+              klar på både sjov og seriøse opgaver, uanset om det gælder sociale
+              arrangementer eller noget arbejdsrelateret.
+            </p>
+          </div>
+          <div class="imgWrapper">
+            <img src="../Assets/Img/vandring2.jpg" alt="Vandring Image" />
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
